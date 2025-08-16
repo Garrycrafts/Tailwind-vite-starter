@@ -1,0 +1,44 @@
+# ===============================
+# 🔧 Core Build + Dependencies
+# ===============================
+node_modules/
+dist/
+.vite/
+*.log
+*.tmp
+*.cache
+
+# Tailwind / CSS Artifacts
+*.css.map
+*.sass.map
+*.scss.map
+
+# ===============================
+# 🔒 Lock Files
+# ===============================
+# Keep lock files tracked for reproducibility
+# If you use npm: commit package-lock.json
+# If yarn: commit yarn.lock
+# If pnpm: commit pnpm-lock.yaml
+
+# ===============================
+# 💻 Editor & OS
+# ===============================
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===============================
+# ⚙️ Env + Secrets
+# ===============================
+.env
+.env.*
+!.env.example
+
+# ===============================
+# 🧪 Test + Coverage
+# ===============================
+coverage/
+*.test.*

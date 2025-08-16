@@ -1,0 +1,26 @@
+{
+  "name": "tailwindtest1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dist",
+    "lint:css": "stylelint 'src/**/*.{css,scss}'",
+    "format:css": "prettier --write 'src/**/*.{css,scss}'",
+    "tw:build": "tailwindcss -i ./src/index.css -o ./dist/tailwind.css ",
+    "tw:watch": "tailwindcss -i ./src/index.css -o ./dist/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.1.2"
+  }
+}
