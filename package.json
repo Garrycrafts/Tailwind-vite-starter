@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:dev": "vite build --mode debug",
     "preview": "vite preview",
     "clean": "rimraf dist",
-    "lint:css": "stylelint 'src/**/*.{css,scss}'",
-    "format:css": "prettier --write 'src/**/*.{css,scss}'",
-    "tw:build": "tailwindcss -i ./src/index.css -o ./dist/tailwind.css ",
-    "tw:watch": "tailwindcss -i ./src/index.css -o ./dist/tailwind.css --watch"
+    "lint:css": "stylelint \"src/**/*.{css,scss}\"",
+    "format": "prettier --write .",
+    "show:css": "node scripts/show-dist-css.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,11 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-config-tailwindcss": "^1.0.0",
     "tailwindcss": "^3.4.17",
     "vite": "^7.1.2"
   }
